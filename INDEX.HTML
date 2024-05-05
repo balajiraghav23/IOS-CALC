@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./style.css" rel="stylesheet">
+</head>
+<body>
+    <center><h1>IOS CALC</h1></center>
+    <div class="calc">
+        <form class="ff1" name="form1">
+
+            <input type="text" id="calcu" name="answer">
+            <input type="button" value="C" class="ac" onclick="form1.answer.value=' ' " id="clear">
+            <input type="button" value="+/-" class="or1" onclick="form1.answer.value += '*-1' ">
+            <input type="button" value="%" class="or1" onclick="form1.answer.value += '%' ">
+            <input type="button" value="÷" class="or" onclick="form1.answer.value += '/'">
+            
+            <input type="button" value="7" class="n" onclick="form1.answer.value += '7'">
+            <input type="button" value="8" class="n" onclick="form1.answer.value += '8'">
+            <input type="button" value="9" class="n" onclick="form1.answer.value += '9'">
+            <input type="button" value="X" class="or" onclick="form1.answer.value += '*'">
+            
+            <input type="button" value="4" class="n" onclick="form1.answer.value += '4'">
+            <input type="button" value="5" class="n" onclick="form1.answer.value += '5'">
+            <input type="button" value="6" class="n" onclick="form1.answer.value += '6'">
+            <input type="button" value="-" class="or" onclick="form1.answer.value += '-'">
+            
+            <input type="button" value="1" class="n" onclick="form1.answer.value += '1'">
+            <input type="button" value="2" class="n" onclick="form1.answer.value += '2'">
+            <input type="button" value="3" class="n" onclick="form1.answer.value += '3'">
+            <input type="button" value="+" class="or" onclick="form1.answer.value += '+'">
+            
+            <input type="button" value="0" class="hh" onclick="form1.answer.value += '0'">
+            <input type="button" value="." class="n" onclick="form1.answer.value += '.'">
+            <input type="button" value="=" class="or" onclick="form1.answer.value=eval(form1.answer.value)">
+            
+        </form>
+    </div>
+</body>
+</html>
